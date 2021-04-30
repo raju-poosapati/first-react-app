@@ -1,8 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "./menu-item-styles.scss";
 const MenuItem = (props) => {
+  const history = useHistory();
   const redirect = () => {
-    window.location.href = props.redirectUrl;
+    // window.location.href = props.redirectUrl;
+    history.push(props.redirectUrl);
   };
   return (
     <div className="menu-item">
