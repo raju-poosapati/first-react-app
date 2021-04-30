@@ -9,7 +9,7 @@
   float: left;
   display: flex;
 }
-.signin-button {
+.nav-button {
   float: right;
   display: flex;
   background-color: #4caf50; /* Green */
@@ -19,6 +19,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border: 1px solid black;
   font-size: 16px;
   &:hover {
     background-color: #287933; /* Green */

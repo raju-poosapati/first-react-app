@@ -3,7 +3,7 @@ import Directory from "../../components/directory/directory-component";
 import NavBar from "../../components/navbar/navbar-component";
 import "./homepage-styles.scss";
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div className="home-page">
       <NavBar />
@@ -12,4 +12,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

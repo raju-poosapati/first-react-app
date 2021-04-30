@@ -1,19 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar-styles.scss";
 
 const NavBar = () => {
-  const [flag, setFlag] = useState(true);
-
-  const changeFlag = () => {
-    setFlag(!flag);
-  };
-
   return (
     <div className="topnav">
-      <img className="logo" src="https://picsum.photos/250/50" alt="logo"></img>
-      <button className="signin-button" onClick={changeFlag}>
-        {flag ? "Sign in" : "Sign out"}
-      </button>
+      <Link to="/">
+        <img
+          className="logo"
+          src="https://picsum.photos/250/50"
+          alt="logo"
+        ></img>
+      </Link>
+      <Link to="/signin">
+        <button className="nav-button">Sign in</button>
+      </Link>
+      <Link to="/register">
+        <button className="nav-button">Register</button>
+      </Link>
     </div>
   );
 };
